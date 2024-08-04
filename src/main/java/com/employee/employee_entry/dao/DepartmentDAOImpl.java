@@ -28,4 +28,9 @@ public class DepartmentDAOImpl implements DepartmentDAO{
         TypedQuery<Department> theQuery = entityManager.createQuery("From Department",Department.class);
         return theQuery.getResultList();
     }
+
+    public Department departmentFindById(int departmentId){
+        Department department =entityManager.find(Department.class,departmentId);
+        return department;
+    }
 }

@@ -9,4 +9,5 @@ public interface DepartmentService {
     public Department saveDepartment(Department department);
     public List<Department> findAllDepartment();
     public Department updateDepartment(Department department);
+    public Department departmentFindById(int departmentId);
 }

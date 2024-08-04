@@ -9,5 +9,7 @@ public interface DepartmentDAO {
 
     public List<Department> findAllDepartment();
 
+    public Department departmentFindById(int departmentId);
+
 
 }

@@ -27,9 +27,15 @@ public class DepartmentServiceImpl implements DepartmentService {
         return departmentDAO.findAllDepartment();
     }
 
+    public Department departmentFindById(int departmentId){
+        return departmentDAO.departmentFindById(departmentId);
+    }
+
     @Override
     @Transactional
     public Department updateDepartment(Department department) {
         return departmentDAO.saveDepratment(department);
     }
+
+
 }
